@@ -20,7 +20,7 @@ def upload_pdf():
         # Create a new PDF with text to overlay
         packet = io.BytesIO()
         can = canvas.Canvas(packet, pagesize=letter)
-        can.setFont("Helvetica", 4)
+        can.setFont("Helvetica", 1)
         can.setFillColorRGB(1, 1, 1)  # Set color to white
         can.drawString(
             50, 750,
